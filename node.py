@@ -13,7 +13,7 @@ class CustomScheduler:
         defaults = [4.12, 1.62, 0.7, 0.04]
         for i in range(0, 26):
             default = defaults[i] if i < len(defaults) else 0.0
-            inputs["optional"][f"sigma_{i}"] = ("FLOAT", {"default": default, "min": 0.0, "max": 100.0, "step": 0.01, "round": 0.0001})
+            inputs["optional"][f"sigma_{i}"] = ("FLOAT", {"default": default, "min": 0.0, "max": 999999.0, "step": 0.01, "round": 0.0001})
         
         return inputs
         
